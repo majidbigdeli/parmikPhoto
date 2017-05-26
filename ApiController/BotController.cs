@@ -14,6 +14,7 @@ using Parmik.CS.Core.Image;
 using Telegram.Bot;
 using Telegram.Bot.Types;
 using majidParmikPhoto;
+using majidParmikPhoto.Utility;
 
 namespace WebApplication28.ApiController
 {
@@ -66,6 +67,25 @@ namespace WebApplication28.ApiController
                 throw e;
             }
         }
+        [HttpPost]
+        public async Task<object> PostHappy([FromBody]SimplePhotoEffect value)
+        {
+            string webRootPath = _hostingEnvironment.WebRootPath;
+            try
+            {
+                var image = CardHappy(value);
+                var myUniqueFileName = string.Format(@"{0}.jpg", DateTime.Now.Ticks);
+                image.Save(webRootPath + @"/img/" + myUniqueFileName);
+                vm.Link = "../img/" + myUniqueFileName;
+                vm.Name = "tg://resolve?domain=parmikphotobot&start=" + myUniqueFileName;
+                return vm;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
         private Image Card(SimplePhotoEffect md)
         {
             if (md.Effect == Effects.TextAdder)
@@ -86,5 +106,16 @@ namespace WebApplication28.ApiController
             }
             return null;
         }
+        private Image CardHappy(SimplePhotoEffect md)
+        {
+            if (md.Effect == Effects.TextAdder)
+            {
+                var datadir = @"D:\HostingSpaces\majidbigdeli\cardpostal.parmik.com\wwwroot\wwwroot\data\Happy\";
+                if (md.Level != null)
+                    return PostalHappyCard.Instance(datadir).GetCard(md.Signature, md.Text, (int)md.Level.Value);
+            }
+            return null;
+        }
+
     }
 }

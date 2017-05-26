@@ -6,9 +6,40 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="wwwroot\data\Father\IranNastaliq.ttf" />
+    <Content Include="wwwroot\data\Father\IranNastaliq_.ttf" />
+    <Content Include="wwwroot\data\Father\t1c1.png" />
+    <Content Include="wwwroot\data\Father\t1c2.png" />
+    <Content Include="wwwroot\data\Father\t1c3.png" />
+    <Content Include="wwwroot\data\Father\t1c4.png" />
+    <Content Include="wwwroot\data\Father\t1c5.png" />
+    <Content Include="wwwroot\data\Father\t1c6.png" />
+    <Content Include="wwwroot\data\Father\t2c1.png" />
+    <Content Include="wwwroot\data\Father\t2c2.png" />
+    <Content Include="wwwroot\data\Father\t2c3.png" />
+    <Content Include="wwwroot\data\Father\t2c4.png" />
+    <Content Include="wwwroot\data\Father\t2c5.png" />
+    <Content Include="wwwroot\data\Father\t2c6.png" />
+    <Content Include="wwwroot\data\IranNastaliq.ttf" />
+    <Content Include="wwwroot\data\IranNastaliq_.ttf" />
+    <Content Include="wwwroot\data\t1c1.png" />
+    <Content Include="wwwroot\data\t1c2.png" />
+    <Content Include="wwwroot\data\t1c3.png" />
+    <Content Include="wwwroot\data\t1c4.png" />
+    <Content Include="wwwroot\data\t1c5.png" />
+    <Content Include="wwwroot\data\t1c6.png" />
+    <Content Include="wwwroot\data\t2c1.png" />
+    <Content Include="wwwroot\data\t2c2.png" />
+    <Content Include="wwwroot\data\t2c3.png" />
+    <Content Include="wwwroot\data\t2c4.png" />
+    <Content Include="wwwroot\data\t2c5.png" />
+    <Content Include="wwwroot\data\t2c6.png" />
+    <Content Include="wwwroot\htmlpages\happy.html" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="data\data\New folder\" />
     <Folder Include="data\New folder\" />
-    <Folder Include="wwwroot\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />

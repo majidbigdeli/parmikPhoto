@@ -16,3 +16,8 @@ app.directive("secoundResultb", function () {
     };
 });
 
+app.directive("secoundHappy", function () {
+    return {
+        templateUrl: '../htmlpages/happy.html'
+    };
+});
