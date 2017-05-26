@@ -1,0 +1,54 @@
+﻿
+
+.pop .img-responsive {
+    margin: 0 auto;
+}
+
+
+.ngdialog {
+    padding-top: 0 !important;
+}
+
+
+
+.bacgrund {
+    background-image: -webkit-gradient(linear, 19 0, 0 3006, color-stop(0.035, #bed2d3), color-stop(0.999, #bed2d3), color-stop(0.999, rgba(189, 210, 210, 163)), to(rgba(189, 210, 210, 163)));
+    background-image: -webkit-linear-gradient(269.6378558503351deg, #bed2d3 3.5%, #bed2d3 99.9%, rgba(189, 210, 210, 163) 99.9%, rgba(189, 210, 210, 163));
+    background-image: -moz-linear-gradient(269.6378558503351deg, #bed2d3 3.5%, #bed2d3 99.9%, rgba(189, 210, 210, 163) 99.9%, rgba(189, 210, 210, 163));
+    background-image: -o-linear-gradient(269.6378558503351deg, #bed2d3 3.5%, #bed2d3 99.9%, rgba(189, 210, 210, 163) 99.9%, rgba(189, 210, 210, 163));
+    background-image: linear-gradient(180.3621441496649deg, #bed2d3 3.5%, #bed2d3 99.9%, rgba(189, 210, 210, 163) 99.9%, rgba(189, 210, 210, 163)) Pr
+}
+
+.hover01 figure:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+
+.top-to-bottom {
+    border: 18px solid transparent;
+    padding: 0px;
+    -webkit-border-image: url(http://www.upsara.com/images/32lj_r.png) 30 stretch; /* Safari 3.1-5 */
+    -o-border-image: url(http://www.upsara.com/images/32lj_r.png) 30 stretch; /* Opera 11-12.1 */
+    border-image: url(http://www.upsara.com/images/32lj_r.png) 30 stretch;
+}
+.resaz {
+    width: 60%;
+    height: 60%;
+}
+
+@media screen and (max-width: 480px) {
+    .resaz {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+@media screen and (min-width: 600px) and  (max-device-width:700px) {
+    .resaz {
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<faceRatio>0.700000000000000e+000</faceRatio>
+<foreHeadRatio>0.700000000000000e+000</foreHeadRatio>
+<xFaceOffset>0.0</xFaceOffset>
+<yFaceOffset>-0.6</yFaceOffset>
+<xForeHeadOffset>0.0</xForeHeadOffset>
+<yForeHeadOffset>-0.6</yForeHeadOffset>
+<foreHeadFilePath>"sfh.png"</foreHeadFilePath>
+<faceFilePath>"sf.png"</faceFilePath>
+</opencv_storage>

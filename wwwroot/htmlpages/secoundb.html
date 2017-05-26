@@ -1,0 +1,93 @@
+﻿<div class="row">
+
+    <div class="col-md-12 col-sm-12 col-xs-12 pop">
+        <img class="img-responsive resaz top-to-bottom"
+             ng-src="{{imgResult}}" alt="">
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+
+        <div class="col-md-6 col-sm-6 col-xs-6 pop hover01">
+            <figure><img style="width: 170px" ng-click="backmain()" class="img-responsive" src="../ImageApp/بازگشت.png" alt=""></figure>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6 pop hover01">
+            <figure> <img style="width: 170px" ng-click="Showb()" class="img-responsive" src="../ImageApp/طرح ها.png" alt=""></figure>
+        </div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+
+        <div class="col-md-6 col-sm-6 col-xs-6 pop hover01">
+            <figure>
+                <img style="width: 170px" ng-click="openConfirmWithPreCloseCallbackInlinedWithNestedConfirmbrti()" class="img-responsive"
+                     src="../ImageApp/ویرایش.png" alt="">
+            </figure>
+        </div>
+
+        <div class="col-md-6 col-sm-6 col-xs-6 pop hover01">
+            <figure>
+                <img style="width: 170px" ng-click="shareb()" class="img-responsive"
+                     src="../ImageApp/اشتراک گذاری.png" alt="">
+            </figure>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/ng-template" id="dialogWithNestedConfirmDialogIdbrt">
+    <div style="margin:10px">
+        <label style="font-size: 17px; margin:10px ">متن کارت پستال</label>
+
+        <textarea ng-model="ngDialogData.TextSale" class="form-control" rows="5" cols="40" placeholder="ویرایش متن"></textarea>
+        <label style="font-size: 17px;margin-bottom:10px ">متن امضا (برای مثال دوستت دارم همسرم) </label>
+
+        <textarea ng-model="ngDialogData.SigSale" class="form-control" rows="2" cols="40" placeholder="ویرایش امضاء"></textarea>
+        <div class="ngdialog-buttons">
+            <button type="button" class="ngdialog-button ngdialog-button-secondary" ng-click="closeThisDialog('Cancel')">بستن</button>
+            <button type="button" class="ngdialog-button ngdialog-button-primary" ng-click="confirm(ngDialogData)">ارسال</button>
+        </div>
+    </div>
+</script>
+
+
+
+<script type="text/ng-template" id="them">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-6 col-sm-6 col-xs-6 pop hover01">
+                <figure><img style="height:140px" value="confirm" ng-click="confirm(1)" class="img-responsive" src="../ImageApp/1.png" alt=""></figure>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6 pop hover01">
+                <figure><img style="height:140px" value="confirm" ng-click="confirm(2)" class="img-responsive" src="../ImageApp/2.png" alt=""></figure>
+            </div>
+
+
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-6 col-sm-6 col-xs-6 pop hover01">
+                <figure><img style="height:140px" value="confirm" ng-click="confirm(3)" class="img-responsive" src="../ImageApp/3.png" alt=""></figure>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6 pop hover01">
+                <figure><img style="height:140px" value="confirm" ng-click="confirm(4)" class="img-responsive" src="../ImageApp/5.png" alt=""></figure>
+            </div>
+
+        </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-6 col-sm-6 col-xs-6 pop hover01">
+                <figure><img style="height:140px" value="confirm" ng-click="confirm(5)" class="img-responsive" src="../ImageApp/6.png" alt=""></figure>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6 pop hover01">
+                <figure><img style="height:140px" value="confirm" ng-click="confirm(6)" class="img-responsive" src="../ImageApp/4.png" alt=""></figure>
+            </div>
+
+        </div>
+
+        <div class="col-md-12 col-sm-12 col-xs-12">
+
+            <button style="margin-right:50px;margin-top:10px " class="btn btn-primary" value="close" ng-click="closeThisDialog()">بستن</button>
+        </div>
+
+    </div>
+
+
+
+</script>
